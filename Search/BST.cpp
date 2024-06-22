@@ -54,6 +54,21 @@ TreeNode *bst_insert(TreeNode *root, int val, TreeNode *parent) {
     return root;
 }
 
+void bst_insert_Nonr(TreeNode *root, TreeNode *z) {
+    TreeNode *x, *y;
+    y = nullptr;
+    x = root;
+    while (x != nullptr) {//
+        y = x;//结点的右子树中最左后继结点处
+        if (z->val < x->val) x = x->left;
+        else x = x->right;
+    }
+    z->parent = y;
+    if (y == nullptr) root = z;
+    else if (z->val < y->val) y->left = z;
+    else y->right = z;
+}
+
 void inorder_tree_walk(TreeNode *root) {
     if (root != NULL) {
         inorder_tree_walk(root->left);
@@ -102,12 +117,12 @@ TreeNode *bst_findmax(TreeNode *root) {
     return root;
 }
 
-TreeNode* bst_findsuccessor(TreeNode* node) {
+TreeNode *bst_findsuccessor(TreeNode *node) {
     if (node == nullptr) return nullptr;
 
     // Case 1: 如果节点有右子树，后继节点是右子树中的最左节点
     if (node->right) {
-        TreeNode* current = node->right;
+        TreeNode *current = node->right;
         while (current->left) {
             current = current->left;
         }
@@ -115,7 +130,7 @@ TreeNode* bst_findsuccessor(TreeNode* node) {
     }
 
     // Case 2: 如果节点没有右子树，后继节点是其第一个右子节点的祖先
-    TreeNode* parent = node->parent;
+    TreeNode *parent = node->parent;
     while (parent && parent->right == node) {
         node = parent;
         parent = parent->parent;
@@ -129,7 +144,7 @@ TreeNode *bst_findpredecessor(TreeNode *node) {
 
     // Case 1: 如果节点有左子树，前驱节点是左子树中的最右节点
     if (node->left) {
-        TreeNode* current = node->left;
+        TreeNode *current = node->left;
         while (current->right) {
             current = current->right;
         }
@@ -137,7 +152,7 @@ TreeNode *bst_findpredecessor(TreeNode *node) {
     }
 
     // Case 2: 如果节点没有左子树，前驱节点是其第一个左子节点的祖先
-    TreeNode* parent = node->parent;
+    TreeNode *parent = node->parent;
     while (parent && parent->left == node) {
         node = parent;
         parent = parent->parent;
@@ -160,7 +175,7 @@ void bst_delNode(TreeNode *root, int val) {
         delete node;
     }
 
-    // Case 2: 如果节点有一个子节点
+        // Case 2: 如果节点有一个子节点
     else if (node->left == nullptr || node->right == nullptr) {
         TreeNode *child = node->left ? node->left : node->right;
         if (node->parent->left == node) {
@@ -171,10 +186,12 @@ void bst_delNode(TreeNode *root, int val) {
         delete node;
     }
 
-    // Case 3: 如果节点有两个子节点
+        // Case 3: 如果节点有两个子节点
     else {
         TreeNode *successor = bst_findsuccessor(node);
         node->val = successor->val;
         bst_delNode(successor, successor->val);
     }
 }
+
+

@@ -1,4 +1,11 @@
 /Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/Sort.dir
 /Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/Search.dir
+/Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/Image_Compress.dir
+/Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/Image_Compress_Relative.dir
+/Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/Matrix_Mul.dir
+/Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/OBST.dir
+/Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/ASM.dir
+/Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/First_Second.dir
+/Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/Image_Compress_Ref.dir
 /Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir

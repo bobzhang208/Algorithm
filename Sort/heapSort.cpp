@@ -1,48 +1,74 @@
-//#include <iostream>
-//#include "../Utils/utils.h"
-//
-//using namespace std;
-//
-//
-//void heapify(int arr[], int n, int i) {
-//    int largest = i; // 初始化最大值为根
-//    int left = 2 * i + 1; // 左子节点索引
-//    int right = 2 * i + 2; // 右子节点索引
-//
-//    // 如果左子节点大于根
-//    if (left < n && arr[left] > arr[largest]) {
-//        largest = left;
-//    // 如果右子节点是目前已知的最大值
-//    if (right < n && arr[right] > arr[largest]) {
-//        largest = right;
-//    }
-//
-//    // 如果最大值不是根
-//    if (largest != i) {
-//        swap(arr[i], arr[largest]);
-//        // 递归地调整受影响的子堆
-//        heapify(arr, n, largest);
-//    }
-//}
-//
-//// 用于将一个数组构建成一个最大堆的函数
-//void buildHeap(int arr[], int n) {
-//    // 从最后一个非叶子节点开始，直到根节点
-//    for (int i = n / 2 - 1; i >= 0; i--) {
-//        heapify(arr, n, i);
-//        printArray(arr, n);
-//    }
-//}
-//
-//// 堆排序函数
-//void heapSort(int arr[], int n) {
-//    buildHeap(arr, n);
-//
-//    // 一个个从堆顶取出元素，然后重新调整堆
-//    for (int i = n - 1; i > 0; i--) {
-//        // 移动当前的根到数组的末尾
-//        swap(arr[0], arr[i]);
-//        // 调整减小了的堆
-//        heapify(arr, i, 0);
-//    }
-//}
+#include <iostream>
+#include "../Utils/utils.h"
+
+using namespace std;
+
+#include <iostream>
+
+void FixHeap(int arr[], int Hsize, int root, int k);
+
+void BuildHeap(int arr[], int n);
+
+void AfixHeap(int L[], int Hsize, int vac, int k);
+
+void heapSort(int arr[], int n) {
+    BuildHeap(arr, n);
+    for (int i = n - 1; i >= 1; --i) {
+        int temp = arr[i];
+        arr[i] = arr[0];
+//        FixHeap(arr, i, 0, temp);
+        AfixHeap(arr, i, 0, temp);
+    }
+}
+
+void BuildHeap(int arr[], int n) {
+    for (int i = n / 2 - 1; i >= 0; --i) {
+//        FixHeap(arr, n, i, arr[i]);
+        AfixHeap(arr, n, i, arr[i]);
+    }
+}
+
+void FixHeap(int arr[], int Hsize, int root, int k) {
+    int larger = 0;
+    if ((2 * root + 1) >= Hsize) {
+        // 如果根节点是叶节点，直接放入 k
+        arr[root] = k;
+        return;
+    } else if ((2 * root + 1) == Hsize - 1) {
+        // 只有一个左孩子
+        larger = 2 * root + 1;
+    } else if (arr[2 * root + 1] > arr[2 * root + 2]) {
+        larger = 2 * root + 1;
+    } else {
+        larger = 2 * root + 2;
+    }
+
+    if (k >= arr[larger]) {
+        arr[root] = k;
+    } else {
+        arr[root] = arr[larger];
+        FixHeap(arr, Hsize, larger, k);
+    }
+}
+
+
+void AfixHeap(int L[], int Hsize, int vac, int k) {
+    while ((2 * vac + 1) < Hsize) {
+        // 如果有右孩子
+        if (L[2 * vac + 1] < L[2 * vac + 2] && (2 * vac + 2) < Hsize) {
+            // 右孩子更大
+            L[vac] = L[2 * vac + 2];    // 将右孩子上移
+            vac = 2 * vac + 2;  // 移动到右孩子
+        } else {
+            // 左孩子更大
+            L[vac] = L[2 * vac + 1];    // 将左孩子上移
+            vac = 2 * vac + 1;  // 移动到左孩子
+        }
+    }
+    while (vac > 0 && k > L[(vac - 1) / 2]) {
+        // 如果 k 比父节点大
+        L[vac] = L[(vac - 1) / 2];  // 将父节点下移
+        vac = (vac - 1) / 2;    // 移动到父节点
+    }
+    L[vac] = k; // 插入 k
+}

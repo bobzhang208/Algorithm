@@ -146,6 +146,12 @@ build CMakeFiles/Search.dir/Search/BST.cpp.o: CXX_COMPILER__Search_unscanned_Deb
   OBJECT_DIR = CMakeFiles/Search.dir
   OBJECT_FILE_DIR = CMakeFiles/Search.dir/Search
 
+build CMakeFiles/Search.dir/Search/RBT.cpp.o: CXX_COMPILER__Search_unscanned_Debug /Users/zzb/Desktop/Experiment/Test/Algorithm/Search/RBT.cpp || cmake_object_order_depends_target_Search
+  DEP_FILE = CMakeFiles/Search.dir/Search/RBT.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Search.dir
+  OBJECT_FILE_DIR = CMakeFiles/Search.dir/Search
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Search
@@ -154,7 +160,7 @@ build CMakeFiles/Search.dir/Search/BST.cpp.o: CXX_COMPILER__Search_unscanned_Deb
 #############################################
 # Link the executable Search
 
-build Search: CXX_EXECUTABLE_LINKER__Search_Debug CMakeFiles/Search.dir/Search/search_main.cpp.o CMakeFiles/Search.dir/Utils/utils.cpp.o CMakeFiles/Search.dir/Search/BST.cpp.o
+build Search: CXX_EXECUTABLE_LINKER__Search_Debug CMakeFiles/Search.dir/Search/search_main.cpp.o CMakeFiles/Search.dir/Utils/utils.cpp.o CMakeFiles/Search.dir/Search/BST.cpp.o CMakeFiles/Search.dir/Search/RBT.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/Search.dir
   POST_BUILD = :
@@ -162,14 +168,236 @@ build Search: CXX_EXECUTABLE_LINKER__Search_Debug CMakeFiles/Search.dir/Search/s
   TARGET_FILE = Search
   TARGET_PDB = Search.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Image_Compress
+
+
+#############################################
+# Order-only phony target for Image_Compress
+
+build cmake_object_order_depends_target_Image_Compress: phony || CMakeFiles/Image_Compress.dir
+
+build CMakeFiles/Image_Compress.dir/DP/IC.cpp.o: CXX_COMPILER__Image_Compress_unscanned_Debug /Users/zzb/Desktop/Experiment/Test/Algorithm/DP/IC.cpp || cmake_object_order_depends_target_Image_Compress
+  DEP_FILE = CMakeFiles/Image_Compress.dir/DP/IC.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Image_Compress.dir
+  OBJECT_FILE_DIR = CMakeFiles/Image_Compress.dir/DP
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Image_Compress
+
+
+#############################################
+# Link the executable Image_Compress
+
+build Image_Compress: CXX_EXECUTABLE_LINKER__Image_Compress_Debug CMakeFiles/Image_Compress.dir/DP/IC.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  OBJECT_DIR = CMakeFiles/Image_Compress.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Image_Compress
+  TARGET_PDB = Image_Compress.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Image_Compress_Relative
+
+
+#############################################
+# Order-only phony target for Image_Compress_Relative
+
+build cmake_object_order_depends_target_Image_Compress_Relative: phony || CMakeFiles/Image_Compress_Relative.dir
+
+build CMakeFiles/Image_Compress_Relative.dir/DP/IC_Relative.cpp.o: CXX_COMPILER__Image_Compress_Relative_unscanned_Debug /Users/zzb/Desktop/Experiment/Test/Algorithm/DP/IC_Relative.cpp || cmake_object_order_depends_target_Image_Compress_Relative
+  DEP_FILE = CMakeFiles/Image_Compress_Relative.dir/DP/IC_Relative.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Image_Compress_Relative.dir
+  OBJECT_FILE_DIR = CMakeFiles/Image_Compress_Relative.dir/DP
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Image_Compress_Relative
+
+
+#############################################
+# Link the executable Image_Compress_Relative
+
+build Image_Compress_Relative: CXX_EXECUTABLE_LINKER__Image_Compress_Relative_Debug CMakeFiles/Image_Compress_Relative.dir/DP/IC_Relative.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  OBJECT_DIR = CMakeFiles/Image_Compress_Relative.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Image_Compress_Relative
+  TARGET_PDB = Image_Compress_Relative.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Matrix_Mul
+
+
+#############################################
+# Order-only phony target for Matrix_Mul
+
+build cmake_object_order_depends_target_Matrix_Mul: phony || CMakeFiles/Matrix_Mul.dir
+
+build CMakeFiles/Matrix_Mul.dir/DP/Matrix_Mul.cpp.o: CXX_COMPILER__Matrix_Mul_unscanned_Debug /Users/zzb/Desktop/Experiment/Test/Algorithm/DP/Matrix_Mul.cpp || cmake_object_order_depends_target_Matrix_Mul
+  DEP_FILE = CMakeFiles/Matrix_Mul.dir/DP/Matrix_Mul.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Matrix_Mul.dir
+  OBJECT_FILE_DIR = CMakeFiles/Matrix_Mul.dir/DP
+
+build CMakeFiles/Matrix_Mul.dir/Utils/utils.cpp.o: CXX_COMPILER__Matrix_Mul_unscanned_Debug /Users/zzb/Desktop/Experiment/Test/Algorithm/Utils/utils.cpp || cmake_object_order_depends_target_Matrix_Mul
+  DEP_FILE = CMakeFiles/Matrix_Mul.dir/Utils/utils.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Matrix_Mul.dir
+  OBJECT_FILE_DIR = CMakeFiles/Matrix_Mul.dir/Utils
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Matrix_Mul
+
+
+#############################################
+# Link the executable Matrix_Mul
+
+build Matrix_Mul: CXX_EXECUTABLE_LINKER__Matrix_Mul_Debug CMakeFiles/Matrix_Mul.dir/DP/Matrix_Mul.cpp.o CMakeFiles/Matrix_Mul.dir/Utils/utils.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  OBJECT_DIR = CMakeFiles/Matrix_Mul.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Matrix_Mul
+  TARGET_PDB = Matrix_Mul.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target OBST
+
+
+#############################################
+# Order-only phony target for OBST
+
+build cmake_object_order_depends_target_OBST: phony || CMakeFiles/OBST.dir
+
+build CMakeFiles/OBST.dir/DP/OBST.cpp.o: CXX_COMPILER__OBST_unscanned_Debug /Users/zzb/Desktop/Experiment/Test/Algorithm/DP/OBST.cpp || cmake_object_order_depends_target_OBST
+  DEP_FILE = CMakeFiles/OBST.dir/DP/OBST.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/OBST.dir
+  OBJECT_FILE_DIR = CMakeFiles/OBST.dir/DP
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target OBST
+
+
+#############################################
+# Link the executable OBST
+
+build OBST: CXX_EXECUTABLE_LINKER__OBST_Debug CMakeFiles/OBST.dir/DP/OBST.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  OBJECT_DIR = CMakeFiles/OBST.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = OBST
+  TARGET_PDB = OBST.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ASM
+
+
+#############################################
+# Order-only phony target for ASM
+
+build cmake_object_order_depends_target_ASM: phony || CMakeFiles/ASM.dir
+
+build CMakeFiles/ASM.dir/DP/ASM.c.o: C_COMPILER__ASM_unscanned_Debug /Users/zzb/Desktop/Experiment/Test/Algorithm/DP/ASM.c || cmake_object_order_depends_target_ASM
+  DEP_FILE = CMakeFiles/ASM.dir/DP/ASM.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/ASM.dir
+  OBJECT_FILE_DIR = CMakeFiles/ASM.dir/DP
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ASM
+
+
+#############################################
+# Link the executable ASM
+
+build ASM: C_EXECUTABLE_LINKER__ASM_Debug CMakeFiles/ASM.dir/DP/ASM.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  OBJECT_DIR = CMakeFiles/ASM.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ASM
+  TARGET_PDB = ASM.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target First_Second
+
+
+#############################################
+# Order-only phony target for First_Second
+
+build cmake_object_order_depends_target_First_Second: phony || CMakeFiles/First_Second.dir
+
+build CMakeFiles/First_Second.dir/Search/First_Second.c.o: C_COMPILER__First_Second_unscanned_Debug /Users/zzb/Desktop/Experiment/Test/Algorithm/Search/First_Second.c || cmake_object_order_depends_target_First_Second
+  DEP_FILE = CMakeFiles/First_Second.dir/Search/First_Second.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/First_Second.dir
+  OBJECT_FILE_DIR = CMakeFiles/First_Second.dir/Search
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target First_Second
+
+
+#############################################
+# Link the executable First_Second
+
+build First_Second: C_EXECUTABLE_LINKER__First_Second_Debug CMakeFiles/First_Second.dir/Search/First_Second.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  OBJECT_DIR = CMakeFiles/First_Second.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = First_Second
+  TARGET_PDB = First_Second.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Image_Compress_Ref
+
+
+#############################################
+# Order-only phony target for Image_Compress_Ref
+
+build cmake_object_order_depends_target_Image_Compress_Ref: phony || CMakeFiles/Image_Compress_Ref.dir
+
+build CMakeFiles/Image_Compress_Ref.dir/DP/IC_ref.cpp.o: CXX_COMPILER__Image_Compress_Ref_unscanned_Debug /Users/zzb/Desktop/Experiment/Test/Algorithm/DP/IC_ref.cpp || cmake_object_order_depends_target_Image_Compress_Ref
+  DEP_FILE = CMakeFiles/Image_Compress_Ref.dir/DP/IC_ref.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Image_Compress_Ref.dir
+  OBJECT_FILE_DIR = CMakeFiles/Image_Compress_Ref.dir/DP
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Image_Compress_Ref
+
+
+#############################################
+# Link the executable Image_Compress_Ref
+
+build Image_Compress_Ref: CXX_EXECUTABLE_LINKER__Image_Compress_Ref_Debug CMakeFiles/Image_Compress_Ref.dir/DP/IC_ref.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  OBJECT_DIR = CMakeFiles/Image_Compress_Ref.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Image_Compress_Ref
+  TARGET_PDB = Image_Compress_Ref.dbg
+
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug && /opt/homebrew/Cellar/cmake/3.29.3/bin/ccmake -S/Users/zzb/Desktop/Experiment/Test/Algorithm -B/Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = cd /Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug && /Users/zzb/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -197,7 +425,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/zzb/Desktop/Experiment/Test/Algorithm/cmake-build-debug
 
-build all: phony Sort Search
+build all: phony Sort Search Image_Compress Image_Compress_Relative Matrix_Mul OBST ASM First_Second Image_Compress_Ref
 
 # =============================================================================
 # Built-in targets
